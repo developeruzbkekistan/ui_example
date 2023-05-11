@@ -1,16 +1,27 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MaterialApp(
+    home: Scaffold(
+      appBar: AppBar(
+        title: const Text("Flutter introduction"),
+        backgroundColor: Colors.red,
+      ),
+      body: const Image(
+        image: AssetImage('images/cs.jpg'),
+      ),
+      backgroundColor: Colors.orangeAccent,
+    ),
+  ));
 }
-
+/*
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+      return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -112,4 +123,4 @@ class _MyHomePageState extends State<MyHomePage> {
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
-}
+}*/
